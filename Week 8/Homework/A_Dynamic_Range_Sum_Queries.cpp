@@ -1,6 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
+#define el '\n'
+#define step(begin,end) for(ll i = begin; i < end; i++)
+#define vi vector<int>
+
+ll nxt(){
+    ll x; cin >> x;
+    return x;
+}
 struct segTree{
     ll *seg;
     int N;
@@ -60,3 +68,33 @@ struct segTree{
         return query_node(1,1,N-1, lq,rq);
     }
 };
+
+int main(){
+    
+    int n = nxt();
+    int q = nxt();
+
+    vector<ll> nums(n+1);
+    step(1, n+1){
+        nums[i] = nxt();
+    }
+    
+    segTree seg(n+1);
+    seg.build(nums, 1, 1, n);
+
+    while(q--){
+        int type_query = nxt();
+        if(type_query == 1){
+            // update
+            int pos_update = nxt();
+            ll novo_valor = nxt();
+            seg.update(pos_update, novo_valor);
+        } else{
+            // return sum
+            int a = nxt();
+            int b = nxt();
+            cout << seg.query(a,b) << el;
+        }
+    }
+    return 0;
+}
