@@ -54,10 +54,13 @@ struct segTree{
     }
 
     ll query_node(int no, int l, int r, int min, int max){
-        if(0 > l || r > N - 1) return 0; // fora do intervalo
+        if(0 > l || r > N - 1 || no > (4 * N)) return 0; // fora do intervalo
         if(seg[no].first >= min && seg[no].second <= max){
-            return (r - l) ? (r - l) : 1;
+            if(no == 1) return r;
+            if(l == r) return 1;
+            return (r - l) + 1;
         }
+        if(l == r){ return 0 ; }
         int m = (l+r)/2; // meio
         int e = no*2; // esquerda
         int d = no*2 + 1; // direita
