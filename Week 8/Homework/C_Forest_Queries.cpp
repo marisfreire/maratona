@@ -16,9 +16,9 @@ struct PrefixSum2D{    // building a 2D prefix sum
     int ps[N][M];
 
     void build(vector<vector<long long>>& val, int n, int m){
-        for(int i = 1;i < n; i++){
-            for(int j = 1; j < m; j++){
-                ps[i][j] = val[i][j] + ps[i-1][j] + ps[i][j-1] - ps[i-1][j-1];
+        for(int i = 1;i < n+1; i++){
+            for(int j = 1; j < m+1; j++){
+                ps[i][j] = val[i-1][j-1] + ps[i-1][j] + ps[i][j-1] - ps[i-1][j-1];
             }
         }
     }
@@ -51,7 +51,17 @@ int main (){
         int x1 = nxt<int>();
         int y2 = nxt<int>();
         int x2 = nxt<int>();
-        cout << ps.query(x1-1,y1-1,x2-1,y2-1) << el;
+        if(x1 == x2 && y1 == y2){
+            if(grid[y1-1][x1-1]){
+                cout << 1 << el;
+            } else {
+                cout << 0 << el;
+            }
+            
+        } else {
+            cout << ps.query(y1, x1, y2,x2) << el;
+        }
+        
     }
     return 0;
 }
