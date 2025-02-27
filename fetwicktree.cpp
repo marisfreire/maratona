@@ -6,13 +6,25 @@ struct FenwickTree{
     ll *ft;
     int N;
     FenwickTree(int N){
-        this->N = N;
-        ft = new ll[N];
+        this->N = N+1;
+        ft = new ll[N+1];
+    }
+
+    void build(vector<ll>& v, int n){
+        for(int i = 1; i < n; i++){
+            int pos = i;
+            while((pos) <= n){
+                ft[pos] += v[i];
+                pos += (pos&(-pos));
+        }    
+        }
     }
 
     void update(int pos, ll val){
-        while(pos < N){
-            ft[pos] += val;
+        ll diff = val - ft[pos];
+        ft[pos] = val;
+        while(pos <= N){
+            ft[pos] += diff;
             pos += (pos&(-pos));
         }
     }
