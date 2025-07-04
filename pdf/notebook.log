@@ -1,0 +1,166 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdftex 2025.7.4)  4 JUL 2025 18:15
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**notebook.tex
+(./notebook.tex
+! Undefined control sequence.
+l.1 \documentclass
+                  [10pt,a4paper]{article}
+? 
+! Undefined control sequence.
+l.2 \usepackage
+               [left=0.6cm, right=0.6cm, top=0.6cm, bottom=0.6cm]{geometry}
+? 
+! Undefined control sequence.
+l.3 \usepackage
+               {hyperref}
+? 
+! Undefined control sequence.
+l.4 \usepackage
+               {fancyhdr}
+? 
+! Undefined control sequence.
+l.5 \usepackage
+               {listings}
+? 
+! Undefined control sequence.
+l.6 \usepackage
+               {xcolor}
+? 
+! Undefined control sequence.
+l.7 \usepackage
+               {tcolorbox}
+? 
+! Undefined control sequence.
+l.8 \usepackage
+               {tocloft}
+? 
+! Undefined control sequence.
+l.9 \usepackage
+               {pdflscape}
+? 
+! Undefined control sequence.
+l.10 \usepackage
+                {multicol}
+? 
+! Undefined control sequence.
+l.11 \usepackage
+                [scaled]{beramono}
+? 
+! Undefined control sequence.
+l.12 \usepackage
+                [portuguese]{babel}
+? 
+! Undefined control sequence.
+l.13 \usepackage
+                [T1]{fontenc}
+? 
+! Undefined control sequence.
+l.14 \usepackage
+                [utf8]{inputenc}
+? 
+! Undefined control sequence.
+l.15 \usepackage
+                {titlesec}
+? 
+! Undefined control sequence.
+l.16 \usepackage
+                {setspace}
+? 
+! Undefined control sequence.
+l.17 \usepackage
+                {amsmath}
+? 
+! Undefined control sequence.
+l.18 \usepackage
+                {etoolbox}
+? 
+! Undefined control sequence.
+l.19 \usepackage
+                {needspace}
+? 
+
+Overfull \hbox (14.24606pt too wide) in paragraph at lines 1--20
+\tenrm list-ings xcolor tcol-or-box to-cloft pdflscape mul-ti-col [scaled]beram
+ono [por-tuguese]babel [T1]fontenc [utf8]inputenc|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tenrm l
+.\tenrm i
+.\tenrm s
+.\tenrm t
+.\discretionary
+..\tenrm -
+.etc.
+
+! Undefined control sequence.
+l.21 \tcbuselibrary
+                   {listings}
+? 
+! Undefined control sequence.
+l.22 \tcbuselibrary
+                   {breakable, skins}
+? 
+! Undefined control sequence.
+l.23 \renewcommand
+                  {\arraystretch}{0.85}
+? 
+! Undefined control sequence.
+l.23 \renewcommand{\arraystretch
+                                }{0.85}
+? 
+! Undefined control sequence.
+l.25 \graphicspath
+                  {{./images/}{./temp/}} % Pastas para buscar imagens
+? 
+! Undefined control sequence.
+l.27 \renewcommand
+                  *{\ttdefault}{pcr}
+? 
+! Undefined control sequence.
+l.27 \renewcommand*{\ttdefault
+                              }{pcr}
+? 
+! Undefined control sequence.
+l.28 \renewcommand
+                  \cftsecfont{\fontsize{10}{11}\bfseries}
+? 
+! Undefined control sequence.
+l.28 \renewcommand\cftsecfont
+                             {\fontsize{10}{11}\bfseries}
+? 
+! Undefined control sequence.
+l.28 \renewcommand\cftsecfont{\fontsize
+                                       {10}{11}\bfseries}
+? 
+! Undefined control sequence.
+l.28 ...mand\cftsecfont{\fontsize{10}{11}\bfseries
+                                                  }
+? 
+! Undefined control sequence.
+l.29 \renewcommand
+                  \cftsecpagefont{\fontsize{10}{11}\mdseries}
+? 
+! Undefined control sequence.
+l.29 \renewcommand\cftsecpagefont
+                                 {\fontsize{10}{11}\mdseries}
+? 
+! Undefined control sequence.
+l.29 \renewcommand\cftsecpagefont{\fontsize
+                                           {10}{11}\mdseries}
+? 
+! Undefined control sequence.
+l.29 ...\cftsecpagefont{\fontsize{10}{11}\mdseries
+                                                  }
+? 
+! Undefined control sequence.
+l.30 \renewcommand
+                  \cftsubsecfont{\fontsize{8}{9}\mdseries}
+? 
+! Undefined control sequence.
+l.30 \renewcommand\cftsubsecfont
+                                {\fontsize{8}{9}\mdseries}
+? 
+! Undefined control sequence.
+l.30 \renewcommand\cftsubsecfont{\fontsi
